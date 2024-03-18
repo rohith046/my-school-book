@@ -1,0 +1,278 @@
+{
+    "aem_id": "premiere-pro/how-to/in-app-adding-titles",
+    "metadata": {
+        "descriptions": {
+            "medium": "xxx",
+            "short": "xxx",
+            "long": "xxx"
+        },
+        "media_types": [
+            "project"
+        ],
+        "published_on": "2018-12-17T21:56:44.219Z",
+        "creative_fields": [
+            "video"
+        ],
+        "application": {
+            "fi_code": "premierepro_cc",
+            "sap_code": "PPRO"
+        },
+        "locale": "en_US",
+        "images": {
+            "thumbnail": "{{pathPanelPayloadsWithKey}}teaser.jpg"
+        },
+        "title": "Hinzufügen von Titeln",
+        "platforms": [
+            "in-app"
+        ],
+        "duration_in_seconds": "300",
+        "learning_approach": "interactive-in-app",
+        "related_applications": {
+            "fi_code": [],
+            "sap_code": []
+        },
+        "level": "beginner",
+        "stage": "begin",
+        "topics": [
+            "video"
+        ],
+        "urls": {
+            "helpx": "",
+            "helpx_iframe": ""
+        }
+    },
+    "urls": {
+        "helpx": "",
+        "helpx_iframe": ""
+    },
+    "created_on": "2018-11-07T23:40:09.451Z",
+    "modified_on": "2018-12-17T21:58:45.173Z",
+    "locale": "en_US",
+    "published_status": "live",
+    "tutorialUUID": "eeed791c-d9cf-377e-bfde-5d6ab5638c8a",
+    "service_uuid": "xxx",
+    "version": 6,
+    "surfaces": {
+        "in_app_panel": {
+            "format": "dva",
+            "version": "0.1",
+            "projectUrl": "{{pathPreinstalledPayloads}}Adding Titles.prproj",
+            "sizeBytes": "123456789",
+            "minVersion": "13.0.2",
+            "additionalAssets": [],
+            "steps": [
+                {
+                    "stepActionsOnShow": [
+                        {
+                            "actionName": "openSequenceByName",
+                            "payload": {
+                                "sequenceName": "My Sequence"
+                            }
+                        }
+                    ],
+                    "stepItems": [
+                        {
+                            "type": "video",
+                            "videoUrl": "{{pathPanelPayloadsWithKey}}open-essential-graphics.mp4",
+                            "autoplay": true,
+                            "loop": true
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Das Bedienfeld „Essential Graphics“"
+                        },
+                        {
+                            "type": "text",
+                            "text": "Häufig werden Filmen <$Titel$> hinzugefügt, um die Handlung des Films zu unterstützen. Sie können Titel im Vor- oder Abspann oder zum Vorstellen nicht bekannter Personen und Orte verwenden."
+                        },
+                        {
+                            "type": "text",
+                            "text": "In diesem Tutorial verwenden Sie das Bedienfeld „Essential Graphics“, um Ihrem Projekt einen Anfangstitel hinzufügen."
+                        },
+                        {
+                            "type": "listSubsteps",
+                            "listItems": [
+                                {
+                                    "text": "Klicken Sie im Anwendungsmenü auf <$Fenster > Essential Graphics$>.",
+                                    "checkUserInteractions": [
+                                        {
+                                            "check": "isPanelOpen",
+                                            "payload": {
+                                                "panelName": "Graphics"
+                                            }
+                                        }
+                                    ],
+                                    "showOnComplete": {
+                                        "heading": "Erfolgreich!",
+                                        "texts": [
+                                            "Sie haben gerade das Bedienfeld „Essential Graphics“ auf der rechten Seite der Benutzeroberfläche geöffnet. Hier haben Sie die Auswahl zwischen Hunderten von kostenlosen vorgefertigten Grafiken, die Sie über das Bedienfeld direkt in Ihre Projekte einfügen können. Damit genügend Platz für dieses Bedienfeld vorhanden ist, müssen Sie möglicherweise die Größe der anderen Bedienfelder ändern."
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "stepItems": [
+                        {
+                            "type": "video",
+                            "videoUrl": "{{pathPanelPayloadsWithKey}}add-title.mp4",
+                            "autoplay": true,
+                            "loop": true
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Hinzufügen eines Titels zur Sequenz"
+                        },
+                        {
+                            "type": "text",
+                            "text": "Angenommen, Sie möchten Ihrer Sequenz wie in einem Film einen Anfangstitel hinzufügen. (Titelgrafiken werden als magentafarbene Rechtecke im Schnittfenster dargestellt.)"
+                        },
+                        {
+                            "type": "listSubsteps",
+                            "listItems": [
+                                {
+                                    "text": "Geben Sie das Wort <$„Titel“$> in die Suchleiste des Bedienfelds ein und drücken Sie die <%{KEY.ENTER}%>."
+                                },
+                                {
+                                    "text": "Suchen Sie den Titel mit dem Namen <$„Titel - einfach“$>."
+                                },
+                                {
+                                    "text": "Verwenden Sie die animierte Grafik oben als Referenz. Halten Sie <%{KEY.COMMAND_CONTROL.{{osName}}}%> gedrückt, klicken auf das Titelsymbol und ziehen Sie es an den Anfang der Sequenz, bis der magentafarbene Clip am Anfang der Spur V1 einrastet.",
+                                    "checkUserInteractions": [
+                                        {
+                                            "check": "clipAdded",
+                                            "payload": {
+                                                "trackType": "video"
+                                            }
+                                        },
+                                        {
+                                            "check": "clipMoved",
+                                            "payload": {
+                                                "clipName": "Clip 1"
+                                            }
+                                        }
+                                    ],
+                                    "checkParallel": true,
+                                    "showOnComplete": {
+                                        "heading": "Erfolgreich!",
+                                        "texts": [
+                                            "Sie haben Ihrem Film gerade einen Anfangstitel hinzugefügt. Jetzt sollte im Schnittfenster die Titelgrafik als neuer Clip am Anfang der V1-Spur angezeigt werden. In der Titelgrafik sollte „Ihr Titel hier“ in weißen Buchstaben auf einem schwarzen Hintergrund angezeigt werden."
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "stepItems": [
+                        {
+                            "type": "video",
+                            "videoUrl": "{{pathPanelPayloadsWithKey}}click-on-text.mp4",
+                            "autoplay": true,
+                            "loop": true
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Bearbeiten eines Titels"
+                        },
+                        {
+                            "type": "text",
+                            "text": "Sie können fast jede Eigenschaft eines Titels bearbeiten, von der Farbe und dem Schriftgrad bis zur Position auf dem Bildschirm."
+                        },
+                        {
+                            "type": "listSubsteps",
+                            "listItems": [
+                                {
+                                    "text": "Stellen Sie sicher, dass sich der Abspielkopf über dem Titel-Clip befindet, sodass Sie „Ihr Titel hier“ im {{definition:{TOOLTIP.PROGRAM_PANEL}|Programmmonitorfenster}} sehen.<br><br>Um die Eigenschaftseinstellungen des Titels zu öffnen, klicken Sie auf im Programmmonitorfenster „Ihr Titel hier“.",
+                                    "checkUserInteractions": [
+                                        {
+                                            "check": "isCtiOverClip",
+                                            "payload": {
+                                                "layerName": "Video 1"
+                                            }
+                                        }
+                                    ],
+                                    "showOnComplete": {
+                                        "heading": "Erfolgreich!",
+                                        "texts": [
+                                            "Sie haben gerade alle bearbeitbaren Eigenschaften für diesen Titel geöffnet. <$Doppelklicken$> Sie im Programmmonitorfenster auf „Ihr Titel hier“ und ändern Sie den Titel in <$„Rückkehr nach Hause“$>."
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "stepItems": [
+                        {
+                            "type": "video",
+                            "videoUrl": "{{pathPanelPayloadsWithKey}}add-title-directly.mp4",
+                            "autoplay": true,
+                            "loop": true
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Hinzufügen von Titeln zu Clips"
+                        },
+                        {
+                            "type": "text",
+                            "text": "In bestimmten Fällen möchten Sie eventuell einen Titel zum Clip hinzufügen, sodass der Clip und der Titel gleichzeitig angezeigt werden. Dazu fügen Sie einfach die Titelgrafik in einer neuen Videospur über dem gewünschten Clip hinzu."
+                        },
+                        {
+                            "type": "listSubsteps",
+                            "listItems": [
+                                {
+                                    "text": "Verschieben Sie den Abspielkopf an den Anfang von Clip 1 in der Spur V1.",
+                                    "checkUserInteractions": [
+                                        {
+                                            "check": "isCtiOverClip",
+                                            "payload": {
+                                                "clipName": "Clip 1"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "Geben Sie auf der Registerkarte „Durchsuchen“ des Bedienfelds „Essential Graphics“ den Text „Unteres Drittel“ in der Suchleiste ein und drücken Sie <%{KEY.ENTER}%>."
+                                },
+                                {
+                                    "text": "Suchen Sie den Titelnamen <$„Unteres Drittel – einfach“$>."
+                                },
+                                {
+                                    "text": "Verwenden Sie die oben gezeigte animierte Grafik als Referenz, klicken Sie auf den Titel und ziehen Sie ihn in die Spur V2. Legen Sie ihn direkt über dem Anfang von Clip 1 ab.",
+                                    "checkUserInteractions": [
+                                        {
+                                            "check": "clipAdded",
+                                            "payload": {
+                                                "layerName": "Video 2"
+                                            }
+                                        }
+                                    ],
+                                    "showOnComplete": {
+                                        "heading": "Erfolgreich!",
+                                        "texts": [
+                                            "Betrachten Sie das Programmmonitorfenster. Jetzt sollte die Titelgrafik über dem Videoclip angezeigt werden. Klicken Sie auf den oberen Text, um die Titeleinstellungen zu öffnen. Ändern Sie die obere Zeile des Titels in <$„Atitlan-See“$> und die untere Zeile in <$„Guatemala“$>."
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "stepItems": [
+                        {
+                            "type": "endScreen",
+                            "successHeading": "Herzlichen Glückwunsch!",
+                            "successText": "Sie haben gerade gelernt, wie Sie mit dem Bedienfeld „Essential Graphics“ Ihrem Film Titel hinzufügen. Als Nächstes erfahren Sie, wie Sie Übergänge zwischen Ihren Clips einfügen."
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

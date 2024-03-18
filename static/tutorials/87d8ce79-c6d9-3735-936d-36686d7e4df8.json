@@ -1,0 +1,269 @@
+{
+    "aem_id": "premiere-pro/how-to/in-app-changing-speed",
+    "metadata": {
+        "descriptions": {
+            "medium": "xxx",
+            "short": "xxx",
+            "long": "xxx"
+        },
+        "media_types": [
+            "project"
+        ],
+        "published_on": "2018-12-17T21:56:44.219Z",
+        "creative_fields": [
+            "video"
+        ],
+        "application": {
+            "fi_code": "premierepro_cc",
+            "sap_code": "PPRO"
+        },
+        "locale": "en_US",
+        "images": {
+            "thumbnail": "{{pathPanelPayloadsWithKey}}teaser.jpg"
+        },
+        "title": "Ändern der Geschwindigkeit von Clips",
+        "platforms": [
+            "in-app"
+        ],
+        "duration_in_seconds": "120",
+        "learning_approach": "interactive-in-app",
+        "related_applications": {
+            "fi_code": [],
+            "sap_code": []
+        },
+        "level": "beginner",
+        "stage": "begin",
+        "topics": [
+            "video"
+        ],
+        "urls": {
+            "helpx": "",
+            "helpx_iframe": ""
+        }
+    },
+    "urls": {
+        "helpx": "",
+        "helpx_iframe": ""
+    },
+    "created_on": "2018-11-07T23:40:09.451Z",
+    "modified_on": "2018-12-17T21:58:45.173Z",
+    "locale": "en_US",
+    "published_status": "live",
+    "tutorialUUID": "87d8ce79-c6d9-3735-936d-36686d7e4df8",
+    "service_uuid": "xxx",
+    "version": 6,
+    "surfaces": {
+        "in_app_panel": {
+            "format": "dva",
+            "version": "0.1",
+            "projectUrl": "{{pathPreinstalledPayloads}}Changing Speed.prproj",
+            "sizeBytes": "123456789",
+            "minVersion": "13.0.2",
+            "additionalAssets": [],
+            "steps": [
+                {
+                    "stepActionsOnShow": [
+                        {
+                            "actionName": "openProjectAndCloseAndSaveOthers",
+                            "payload": {
+                                "projectUrl": "{{pathPreinstalledPayloads}}Changing Speed.prproj"
+                            }
+                        },
+                        {
+                            "actionName": "openSequenceByName",
+                            "payload": {
+                                "sequenceName": "My Sequence"
+                            }
+                        }
+                    ],
+                    "stepItems": [
+                        {
+                            "type": "video",
+                            "videoUrl": "{{pathPanelPayloadsWithKey}}watch-result.mp4",
+                            "autoplay": true,
+                            "loop": true
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Das endgültige Produkt"
+                        },
+                        {
+                            "type": "text",
+                            "text": "Sehen Sie sich das endgültige Projekt an, bevor Sie beginnen, um eine bessere Vorstellung davon zu erhalten, was Sie erstellen."
+                        },
+                        {
+                            "type": "listSubsteps",
+                            "listItems": [
+                                {
+                                    "text": "Klicken Sie im {{definition:{TOOLTIP.PROGRAM_PANEL}|Programmmonitorfenster}} auf die Wiedergabeschaltfläche, um eine Vorschau des Videos anzuzeigen.",
+                                    "checkUserInteractions": [
+                                        {
+                                            "check": "ctiMoved"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "stepActionsOnShow": [
+                        {
+                            "actionName": "openProjectAndCloseAndSaveOthers",
+                            "payload": {
+                                "projectUrl": "{{pathPreinstalledPayloads}}Changing Speed 2.prproj"
+                            }
+                        },
+                        {
+                            "actionName": "openSequenceByName",
+                            "payload": {
+                                "sequenceName": "My Sequence"
+                            }
+                        }
+                    ],
+                    "stepItems": [
+                        {
+                            "type": "video",
+                            "videoUrl": "{{pathPanelPayloadsWithKey}}slow-down-clip.mp4",
+                            "autoplay": true,
+                            "loop": true
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Erstellen eines Zeitlupeneffekts"
+                        },
+                        {
+                            "type": "text",
+                            "text": "Das Projekt wurde auf das Aussehen nach Ende der letzten Tutorialreihe zurückgesetzt."
+                        },
+                        {
+                            "type": "text",
+                            "text": "Eine der beliebtesten kreativen Bearbeitungen besteht darin, die Geschwindigkeit der Clips zu ändern, um einen Zeitlupeneffekt zu erzielen."
+                        },
+                        {
+                            "type": "text",
+                            "text": "Angenommen, Sie möchten Clip 3 passend zur Geschwindigkeit der anderen Clips langsamer wiedergeben."
+                        },
+                        {
+                            "type": "listSubsteps",
+                            "listItems": [
+                                {
+                                    "text": "Klicken Sie mit der rechten Maustaste auf Clip 3 und wählen Sie <$Geschwindigkeit/Dauer$> im Optionsmenü."
+                                },
+                                {
+                                    "text": "Ändern Sie zunächst in den Einstellungen „Geschwindigkeit/Dauer“ die <$Geschwindigkeit$> auf <$50 %$>. Klicken Sie dann auf die Option <$Löschen und Lücke schließen, Spur-Clips verschieben$> und auf „OK“.",
+                                    "checkUserInteractions": [
+                                        {
+                                            "check": "checkClipProperties",
+                                            "payload": {
+                                                "clipName": "Clip 3",
+                                                "propertyName": "speed",
+                                                "value": [
+                                                    0.4,
+                                                    0.6
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "showOnComplete": {
+                                        "heading": "Erfolgreich!",
+                                        "texts": [
+                                            "Sie haben gerade die Geschwindigkeit von Clip 3 um 50 % verringert. Durch Auswählen der Option <$Löschen und Lücke schließen, Spur-Clips verschieben$> wurden die Clips neben dem verlangsamten Clip in der Videospur verschoben, um Platz für die längere Wiedergabezeit des verlangsamten Clips zu schaffen."
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "stepItems": [
+                        {
+                            "type": "imageFullLarge",
+                            "imgUrl": "{{pathPanelPayloadsWithKey}}adjusting-speed-practice.png"
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Übung zur Anpassung der Geschwindigkeit"
+                        },
+                        {
+                            "type": "text",
+                            "text": "Im nächsten Abschnitt können Sie das Gelernte mithilfe einer kurzen Aufgabe zur Geschwindigkeitsanpassung vertiefen, die dem Beispiel aus den eben gezeigten Schritten ähnlich ist."
+                        },
+                        {
+                            "type": "text",
+                            "text": "Klicken Sie auf <$Weiter$>, um mit der Aufgabe fortzufahren."
+                        }
+                    ]
+                },
+                {
+                    "stepItems": [
+                        {
+                            "type": "imageFullLarge",
+                            "imgUrl": "{{pathPanelPayloadsWithKey}}speed-up.png"
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Übung"
+                        },
+                        {
+                            "type": "text",
+                            "text": "Die Geschwindigkeit eines Clips kann mit der gleichen Option erhöht und verringert werden."
+                        },
+                        {
+                            "type": "listSubsteps",
+                            "listItems": [
+                                {
+                                    "text": "Versuchen Sie, die Originalgeschwindigkeit von Clip 3 mithilfe der Einstellungen „Geschwindigkeit/Dauer“ wiederherzustellen. Verwenden Sie die unten stehenden Tipps, wenn Sie Hilfe benötigen.",
+                                    "checkUserInteractions": [
+                                        {
+                                            "check": "checkClipProperties",
+                                            "payload": {
+                                                "clipName": "Clip 3",
+                                                "propertyName": "speed",
+                                                "value": 1
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "toggleable",
+                            "icon": "hint",
+                            "heading": "Tipp 1",
+                            "texts": [
+                                "Überlegen Sie, wie sich der Prozentwert für die Geschwindigkeit auf die Geschwindigkeit des gesamten Clips auswirkt."
+                            ]
+                        },
+                        {
+                            "type": "toggleable",
+                            "icon": "hint",
+                            "heading": "Tipp 2",
+                            "texts": [
+                                "Welchen Wert müssten Sie für die Geschwindigkeit festlegen, um die Originalgeschwindigkeit des Clips wiederherzustellen?"
+                            ]
+                        },
+                        {
+                            "type": "toggleable",
+                            "icon": "hint",
+                            "heading": "Tipp 3",
+                            "texts": [
+                                "Setzen Sie den Geschwindigkeitswert zurück auf 100 % und vergessen Sie nicht, auf die Option zum Schließen der Lücke zu klicken, damit die angrenzenden Clips im Schnittfenster „aufrücken“."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "stepItems": [
+                        {
+                            "type": "endScreen",
+                            "successHeading": "Herzlichen Glückwunsch!",
+                            "successText": "Sie haben gerade gelernt, wie Sie einen Zeitlupeneffekt erzielen, indem Sie die Wiedergabegeschwindigkeit eines Clips verlangsamen. Als Nächstes erfahren Sie, wie Sie Ihrem Film Titel und Text hinzufügen."
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

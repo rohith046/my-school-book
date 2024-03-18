@@ -1,0 +1,45 @@
+{
+    "id": "32d9c551-f630-47af-8b45-014843e37f42",
+    "aem_id": "playlist/premiere-pro/video/playlist_beyond-basics",
+    "playlistUUID": "22afc4cd-957e-34b3-aea1-cc0ecb4ec16c",
+    "status": "live",
+    "title": "Kreative und stilistische Bearbeitungen",
+    "tutorial_ids": [
+        "87d8ce79-c6d9-3735-936d-36686d7e4df8",
+        "eeed791c-d9cf-377e-bfde-5d6ab5638c8a",
+        "5100d180-0c9f-3f01-8588-55cfeb166df0",
+        "e08b0c51-cb28-3052-bdd1-e6fa5143de96",
+        "6dd061cc-fbc5-3174-a110-a95f5980420e"
+    ],
+    "created_on": "Mon Dec 17 22:21:52 UTC 2018",
+    "modified_on": "Mon Dec 17 22:21:52 UTC 2018",
+    "published_on": "Thu Dec 13 13:13:32 UTC 2018",
+    "description": "Fünf interaktive Tutorials, mit denen Sie die Grundlagen zum Anpassen der Clip-Geschwindigkeit, Hinzufügen von Titeln und Übergängen, Anpassen von Audio und Farbkorrektur erlernen können.",
+    "type": "skills-and-projects",
+    "header": "In dieser Tutorialreihe fügen Sie dem in der letzten Tutorialreihe erstellten Video stilistische und kreative Bearbeitungen hinzu.<br><br>Die Tutorials sind interaktiv, machen Sie also mit, um den maximalen Lerneffekt zu erzielen.",
+    "level": "beginner",
+    "stage": "begin",
+    "applications": {
+        "sap_code": [
+            "PPRO"
+        ],
+        "fi_code": [
+            "premierepro_cc"
+        ]
+    },
+    "platforms": [
+        "in-app"
+    ],
+    "creative_fields": [
+        "video"
+    ],
+    "topics": [
+        "basic-video-editing",
+        "video"
+    ],
+    "images": {
+        "thumbnail": "{{pathPanelPayloadsWithKey}}teaser.jpg",
+        "hero": "{{pathPanelPayloadsWithKey}}banner.jpg"
+    },
+    "total_duration": 960
+}

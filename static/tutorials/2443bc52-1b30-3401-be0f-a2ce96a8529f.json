@@ -1,0 +1,132 @@
+{
+    "aem_id": "premiere-pro/how-to/in-app-exporting-your-project-content",
+    "metadata": {
+        "descriptions": {
+            "medium": "xxx",
+            "short": "xxx",
+            "long": "xxx"
+        },
+        "media_types": [
+            "project"
+        ],
+        "published_on": "2018-12-17T21:56:44.219Z",
+        "creative_fields": [
+            "video"
+        ],
+        "application": {
+            "fi_code": "premierepro_cc",
+            "sap_code": "PPRO"
+        },
+        "locale": "en_US",
+        "images": {
+            "thumbnail": "{{pathPanelPayloadsWithKey}}teaser.jpg"
+        },
+        "title": "Exportieren von Projektinhalten",
+        "platforms": [
+            "in-app"
+        ],
+        "duration_in_seconds": "180",
+        "learning_approach": "interactive-in-app",
+        "related_applications": {
+            "fi_code": [],
+            "sap_code": []
+        },
+        "level": "beginner",
+        "stage": "begin",
+        "topics": [
+            "video"
+        ],
+        "urls": {
+            "helpx": "",
+            "helpx_iframe": ""
+        }
+    },
+    "urls": {
+        "helpx": "",
+        "helpx_iframe": ""
+    },
+    "created_on": "2018-11-07T23:40:09.451Z",
+    "modified_on": "2018-12-17T21:58:45.173Z",
+    "locale": "en_US",
+    "published_status": "live",
+    "tutorialUUID": "2443bc52-1b30-3401-be0f-a2ce96a8529f",
+    "service_uuid": "xxx",
+    "version": 6,
+    "surfaces": {
+        "in_app_panel": {
+            "format": "dva",
+            "version": "0.1",
+            "projectUrl": "{{pathPreinstalledPayloads}}Exporting Your Project.prproj",
+            "sizeBytes": "123456789",
+            "minVersion": "13.0.2",
+            "additionalAssets": [],
+            "steps": [
+                {
+                    "stepActionsOnShow": [
+                        {
+                            "actionName": "openSequenceByName",
+                            "payload": {
+                                "sequenceName": "My Sequence"
+                            }
+                        }
+                    ],
+                    "stepItems": [
+                        {
+                            "type": "video",
+                            "videoUrl": "{{pathPanelPayloadsWithKey}}export.mp4",
+                            "autoplay": true,
+                            "loop": true
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Exportieren Ihrer Arbeit"
+                        },
+                        {
+                            "type": "text",
+                            "text": "In diesem Tutorial exportieren Sie ein kurzes Video mit Standard-HD-Einstellungen, die Sie auch zum Hochladen Ihres Videos auf Social Media-Websites verwenden können."
+                        },
+                        {
+                            "type": "listSubsteps",
+                            "listItems": [
+                                {
+                                    "text": "Klicken Sie auf das Schnittfenster und drücken Sie <%{KEY.COMMAND_CONTROL.{{osName}}}%> + <%{KEY.EXPORT}%>, um das Dialogfeld „Exporteinstellungen“ zu öffnen."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "text": "Lassen Sie sich nicht von den vielen verschiedenen Einstellungsoptionen verwirren."
+                        },
+                        {
+                            "type": "listSubsteps",
+                            "listItems": [
+                                {
+                                    "text": "Ändern Sie rechts unter „Exporteinstellungen“ die Option <$Format$> in <$H.264$>."
+                                },
+                                {
+                                    "text": "Ändern Sie unter der Formatoption die Option <$Vorgabe$> zu <$Mit Quelle abgleichen – Mittlere Bitrate$>."
+                                },
+                                {
+                                    "text": "Klicken Sie auf den blauen Dateinamen neben der Option <$Ausgabename$> und geben Sie Ihrer Datei einen aussagekräftigeren Namen."
+                                },
+                                {
+                                    "text": "Klicken Sie auf „Exportieren“."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "stepItems": [
+                        {
+                            "type": "endScreen",
+                            "successHeading": "Herzlichen Glückwunsch!",
+                            "successText": "Sie haben Ihre erste Videodatei erfolgreich erstellt. Damit ist die Tutorialreihe „Grundlagen“ abgeschlossen.<br><br>Sehen Sie sich als Nächstes die Tutorialreihe „Kreative und stilistische Bearbeitungen“ an, um mehr über die Bearbeitung von Videos zu erfahren.",
+                            "additionalInfo": "Um einen genauen Überblick über dieses und andere Themen zu erhalten, sehen Sie sich die vollständige Tutorialreihe <a href=\"https://helpx.adobe.com/de/premiere-pro/tutorials.html\">Erste Schritte mit Premiere Pro CC</a> auf adobe.com an."
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

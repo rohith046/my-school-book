@@ -1,0 +1,40 @@
+{
+    "id": "ed3aab11-e129-48ba-ab4a-35aee82ef27d",
+    "aem_id": "playlist/premiere-pro/video/playlist_start-here",
+    "playlistUUID": "114ef6b6-d56f-3925-b538-5bca572c284f",
+    "status": "live",
+    "title": "Premiere Pro – Übersicht",
+    "tutorial_ids": [
+        "77c40d9a-16e3-3530-ade1-9ccd68ad92bc"
+    ],
+    "created_on": "Mon Dec 17 22:21:52 UTC 2018",
+    "modified_on": "Mon Dec 17 22:21:52 UTC 2018",
+    "published_on": "Thu Dec 13 13:13:32 UTC 2018",
+    "description": "Eine zweiminütige Übersicht über die Oberfläche und die Grundlagen für die ersten Schritte.",
+    "type": "start-here",
+    "header": "null",
+    "level": "beginner",
+    "stage": "begin",
+    "applications": {
+        "sap_code": [
+            "PPRO"
+        ],
+        "fi_code": [
+            "premierepro_cc"
+        ]
+    },
+    "platforms": [
+        "in-app"
+    ],
+    "creative_fields": [
+        "video"
+    ],
+    "topics": [
+        "video"
+    ],
+    "images": {
+        "thumbnail": "{{pathPanelPayloadsWithKey}}teaser.jpg",
+        "hero": "{{pathPanelPayloadsWithKey}}banner.jpg"
+    },
+    "total_duration": 120
+}

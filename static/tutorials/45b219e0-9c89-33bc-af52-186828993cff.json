@@ -1,0 +1,343 @@
+{
+    "aem_id": "premiere-pro/how-to/in-app-editing-your-clips",
+    "metadata": {
+        "descriptions": {
+            "medium": "xxx",
+            "short": "xxx",
+            "long": "xxx"
+        },
+        "media_types": [
+            "project"
+        ],
+        "published_on": "2018-12-17T21:56:44.219Z",
+        "creative_fields": [
+            "video"
+        ],
+        "application": {
+            "fi_code": "premierepro_cc",
+            "sap_code": "PPRO"
+        },
+        "locale": "en_US",
+        "images": {
+            "thumbnail": "{{pathPanelPayloadsWithKey}}teaser.jpg"
+        },
+        "title": "Bearbeiten Ihrer Clips",
+        "platforms": [
+            "in-app"
+        ],
+        "duration_in_seconds": "360",
+        "learning_approach": "interactive-in-app",
+        "related_applications": {
+            "fi_code": [],
+            "sap_code": []
+        },
+        "level": "beginner",
+        "stage": "begin",
+        "topics": [
+            "video"
+        ],
+        "urls": {
+            "helpx": "",
+            "helpx_iframe": ""
+        }
+    },
+    "urls": {
+        "helpx": "",
+        "helpx_iframe": ""
+    },
+    "created_on": "2018-11-07T23:40:09.451Z",
+    "modified_on": "2018-12-17T21:58:45.173Z",
+    "locale": "en_US",
+    "published_status": "live",
+    "tutorialUUID": "45b219e0-9c89-33bc-af52-186828993cff",
+    "service_uuid": "xxx",
+    "version": 6,
+    "surfaces": {
+        "in_app_panel": {
+            "format": "dva",
+            "version": "0.1",
+            "projectUrl": "{{pathPreinstalledPayloads}}Editing Your Clips.prproj",
+            "sizeBytes": "123456789",
+            "minVersion": "13.0.2",
+            "additionalAssets": [],
+            "steps": [
+                {
+                    "stepActionsOnShow": [
+                        {
+                            "actionName": "openSequenceByName",
+                            "payload": {
+                                "sequenceName": "My Sequence"
+                            }
+                        }
+                    ],
+                    "stepItems": [
+                        {
+                            "type": "video",
+                            "videoUrl": "{{pathPanelPayloadsWithKey}}using-timeline.mp4",
+                            "autoplay": true,
+                            "loop": true
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Navigieren in einer Sequenz"
+                        },
+                        {
+                            "type": "text",
+                            "text": "Für dieses Tutorial wurde der Spur A1 eine Musikdatei hinzugefügt."
+                        },
+                        {
+                            "type": "text",
+                            "text": "Bevor Sie mit der Bearbeitung beginnen, müssen Sie die Stellen in Ihrer Sequenz suchen, an denen Sie Änderungen vornehmen möchten. Am schnellsten können Sie durch die {{definition:{TOOLTIP.SEQUENCE}|Sequenz}} navigieren und die einzelnen Clips anzeigen, indem Sie den <$Abspielkopf$> (die vertikale blaue Linie im Schnittfenster) verwenden."
+                        },
+                        {
+                            "type": "listSubsteps",
+                            "listItems": [
+                                {
+                                    "text": "Drücken Sie die <%{KEY.SPACEBAR}%>, um die Sequenz wiederzugeben.",
+                                    "checkUserInteractions": [
+                                        {
+                                            "check": "ctiMoved"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "Drücken Sie die <%{KEY.SPACEBAR}%> erneut, um die Wiedergabe der Sequenz anzuhalten.",
+                                    "checkUserInteractions": [
+                                        {
+                                            "check": "ctiStopped"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "Um einen bestimmten Teil Ihrer Sequenz schnell zu finden, klicken Sie auf den {{definition:{TOOLTIP.PLAYHEAD}|Abspielkopf}} und ziehen Sie ihn im Schnittfenster bis zur gesuchten Stelle.",
+                                    "checkUserInteractions": [
+                                        {
+                                            "check": "ctiMoved"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "Führen Sie mithilfe der grauen Bildlaufleiste unten im Schnittfenster einen Bildlauf durch Ihre Sequenz durch."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "stepItems": [
+                        {
+                            "type": "video",
+                            "videoUrl": "{{pathPanelPayloadsWithKey}}insert-edit.mp4",
+                            "autoplay": true,
+                            "loop": true
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Verschieben von Clips"
+                        },
+                        {
+                            "type": "text",
+                            "text": "Nachdem Sie Ihre Sequenz überprüft haben, möchten Sie Ihren Film dadurch verbessern, indem Sie Clip 2 und Clip 3 vertauschen."
+                        },
+                        {
+                            "type": "listSubsteps",
+                            "listItems": [
+                                {
+                                    "text": "Halten Sie <%{KEY.COMMAND_CONTROL.{{osName}}}%> gedrückt, klicken Sie auf <$Clip 3$> und ziehen Sie ihn auf <$Clip 2$>, bis der Anfang von Clip 3 am Anfang von Clip 2 ausgerichtet ist und einrastet. Lassen Sie dann die Maustaste los.",
+                                    "checkUserInteractions": [
+                                        {
+                                            "check": "clipsMoved"
+                                        },
+                                        {
+                                            "check": "checkClipProperties",
+                                            "payload": {
+                                                "clipName": "Clip 2",
+                                                "propertyName": "duration",
+                                                "value": [
+                                                    12,
+                                                    13
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "check": "checkClipProperties",
+                                            "payload": {
+                                                "clipName": "Clip 3",
+                                                "propertyName": "start",
+                                                "value": [
+                                                    5,
+                                                    6
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "showOnComplete": {
+                                        "heading": "Erfolgreich!",
+                                        "texts": [
+                                            "Sie haben gerade die Reihenfolge von Clip 2 und 3 durch Einfügen vertauscht. Wenn ein Clip mithilfe einer Einfügung an eine neue Position verschoben wird, werden die Clips, die sich bereits an dieser Position befinden, in der Spur verschoben, damit Platz für den neuen Clip vorhanden ist. In diesem Fall wird Clip 2 verschoben, damit Platz für Clip 3 zur Verfügung steht.",
+                                            "Wichtig: Wenn Sie <%{KEY.COMMAND_CONTROL.{{osName}}}%> nicht gedrückt halten, ersetzen Sie nur die Teile von Clip 3, die von Clip 2 überdeckt werden."
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "stepActionsOnShow": [
+                        {
+                            "actionName": "openSequenceByName",
+                            "payload": {
+                                "sequenceName": "My Sequence2"
+                            }
+                        },
+                        {
+                            "actionName": "closeSequenceByName",
+                            "payload": {
+                                "sequenceName": "My Sequence"
+                            }
+                        },
+                        {
+                            "actionName": "goToMarkerByIndex",
+                            "payload": {
+                                "index": 1,
+                                "sequenceName": "My Sequence2"
+                            }
+                        }
+                    ],
+                    "stepItems": [
+                        {
+                            "type": "video",
+                            "videoUrl": "{{pathPanelPayloadsWithKey}}trim.mp4",
+                            "autoplay": true,
+                            "loop": true
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Zuschneiden von Clips"
+                        },
+                        {
+                            "type": "text",
+                            "text": "Die Clips wurden nach dem letzten Schritt wieder in die richtige Reihenfolge verschoben, damit Sie den weiteren Erläuterungen einfacher folgen können."
+                        },
+                        {
+                            "type": "text",
+                            "text": "Ein anderer häufiger Grund für die Bearbeitung von Clips ist ihre Länge. Wie müssen Sie vorgehen, wenn der Film nicht länger als 15 Sekunden dauern darf? Sie können den Clip mit der Funktion zum {{definition:{TOOLTIP.TRIMMING}|Zuschneiden}} kürzen."
+                        },
+                        {
+                            "type": "listSubsteps",
+                            "listItems": [
+                                {
+                                    "text": "Bewegen Sie den Cursor an das Ende von <$Clip 2$>, bis statt des schwarzen Pfeils ein rotes, nach links weisendes Zuschnittsymbol für den Cursor angezeigt wird."
+                                },
+                                {
+                                    "text": "Klicken Sie auf das Ende des Clips und ziehen Sie den Cursor langsam bis zum Abspielkopf (aktuell an der 15-Sekunden-Marke).",
+                                    "checkUserInteractions": [
+                                        {
+                                            "check": "clipLengthChanged",
+                                            "payload": {
+                                                "clipName": "Clip 2"
+                                            }
+                                        }
+                                    ],
+                                    "showOnComplete": {
+                                        "heading": "Erfolgreich!",
+                                        "texts": [
+                                            "Sie haben das Ende von Clip 2 gekürzt. Wenn Sie mit der Bearbeitung nicht zufrieden sind, können Sie sie einfach rückgängig machen, indem Sie den Clip wieder verlängern. Die Bearbeitungen im Schnittfenster sind nicht destruktiv und können vollständig zurückgenommen werden. Clips im Schnittfenster sind einfach Kopien Ihrer Clips im Projektfenster, sodass das Original bei der Bearbeitung immer erhalten bleibt."
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "stepItems": [
+                        {
+                            "type": "imageFullLarge",
+                            "imgUrl": "{{pathPanelPayloadsWithKey}}editing-practice.png"
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Übung zur Bearbeitung"
+                        },
+                        {
+                            "type": "text",
+                            "text": "Im nächsten Abschnitt können Sie das Gelernte mithilfe einer kurzen Bearbeitungsaufgabe vertiefen, die dem Beispiel aus den eben gezeigten Schritten ähnlich ist."
+                        },
+                        {
+                            "type": "text",
+                            "text": "Klicken Sie auf <$Weiter$>, um mit der Aufgabe fortzufahren."
+                        }
+                    ]
+                },
+                {
+                    "stepItems": [
+                        {
+                            "type": "imageFullLarge",
+                            "imgUrl": "{{pathPanelPayloadsWithKey}}trim-audio.png"
+                        },
+                        {
+                            "type": "heading",
+                            "text": "Bearbeitungsaufgabe"
+                        },
+                        {
+                            "type": "text",
+                            "text": "Ihr Video ist insgesamt immer noch länger als 15 Sekunden, da die Audiospur viel länger als die Videospur ist."
+                        },
+                        {
+                            "type": "listSubsteps",
+                            "listItems": [
+                                {
+                                    "text": "Versuchen Sie, die Audiospur auf die Länge der Videospur zu kürzen. Verwenden Sie die unten angezeigten Tipps, wenn Sie nicht mehr weiterwissen.",
+                                    "checkUserInteractions": [
+                                        {
+                                            "check": "clipLengthChanged",
+                                            "payload": {
+                                                "clipName": "Music"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "toggleable",
+                            "heading": "Tipp 1",
+                            "icon": "hint",
+                            "texts": [
+                                "Überlegen Sie, mit welcher Art der Bearbeitung Sie einen Clip kürzen können."
+                            ]
+                        },
+                        {
+                            "type": "toggleable",
+                            "heading": "Tipp 2",
+                            "icon": "hint",
+                            "texts": [
+                                "Durch Zuschneiden wird der Audioclip kürzer. Wo soll der Clip gekürzt werden?"
+                            ]
+                        },
+                        {
+                            "type": "toggleable",
+                            "heading": "Tipp 3",
+                            "icon": "hint",
+                            "texts": [
+                                "Bewegen Sie den Cursor zur rechten Seite des Audioclips, bis er als rotes Zuschnittsymbol angezeigt wird. Klicken Sie dann und ziehen Sie den Audioclip nach links, sodass er an der Videospur ausgerichtet ist."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "stepItems": [
+                        {
+                            "type": "endScreen",
+                            "successHeading": "Herzlichen Glückwunsch!",
+                            "successText": "Sie haben gerade gelernt, wie Sie Ihre Clips neu anordnen und zuschneiden. Als Nächstes erfahren Sie, wie Sie Ihr Projekt in eine Videodatei exportieren.",
+                            "additionalInfo": "Um einen genauen Überblick über dieses und andere Themen zu erhalten, sehen Sie sich die vollständige Tutorialreihe <a href=\"https://helpx.adobe.com/de/premiere-pro/tutorials.html\">Erste Schritte mit Premiere Pro CC</a> auf adobe.com an."
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
