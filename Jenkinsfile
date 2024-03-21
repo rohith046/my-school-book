@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+        stage('Checkout Code') {
+            steps {
+                // Pull code from Git repository
+                git 'https://github.com/rohith046/my-school-book'
+            }
+        }
         stage('Copy Files') {
             steps {
                 script {
